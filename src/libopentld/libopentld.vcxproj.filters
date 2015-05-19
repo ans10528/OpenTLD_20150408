@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="imacq\ImAcq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mftracker\BB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mftracker\BBPredict.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mftracker\FBTrack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mftracker\Lk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mftracker\Median.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tld\Clustering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tld\DetectionResult.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tld\DetectorCascade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tld\EnsembleClassifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tld\ForegroundDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tld\MedianFlowTracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tld\NNClassifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tld\TLD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tld\TLDUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tld\VarianceFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imacq\ImAcq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mftracker\BB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mftracker\BBPredict.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mftracker\FBTrack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mftracker\Lk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mftracker\Median.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\Clustering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\DetectionResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\DetectorCascade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\EnsembleClassifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\ForegroundDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\IntegralImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\MedianFlowTracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\NNClassifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\NormalizedPatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\TLD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\TLDUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tld\VarianceFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{429497FF-EE74-45CF-B76A-42566825AA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D3C13170-B60A-4DA0-8C8B-8A8EC51B1A10}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

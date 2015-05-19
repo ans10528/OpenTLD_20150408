@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A3C54004-736D-4056-8F92-1BD106BC96E5}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>libopentld</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\github\OpenTLD_20150408\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libopentld.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opentld</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\github\OpenTLD_20150408\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libopentld.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opentld</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\github\OpenTLD_20150408\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libopentld.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">opentld</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\github\OpenTLD_20150408\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libopentld.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">opentld</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;LIBCONFIGXX_STATIC;LIBCONFIG_STATIC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;LIBCONFIGXX_STATIC;LIBCONFIG_STATIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LIBCONFIGXX_STATIC;LIBCONFIG_STATIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LIBCONFIGXX_STATIC;LIBCONFIG_STATIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LIBCONFIGXX_STATIC;LIBCONFIG_STATIC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LIBCONFIGXX_STATIC;LIBCONFIG_STATIC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LIBCONFIGXX_STATIC;LIBCONFIG_STATIC;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LIBCONFIGXX_STATIC;LIBCONFIG_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\opencv\build\include;D:\opencv\build\include\opencv;D:\github\OpenTLD_20150408\src\libopentld\imacq;D:\github\OpenTLD_20150408\src\libopentld\mftracker;D:\github\OpenTLD_20150408\src\libopentld\tld;D:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/github/OpenTLD_20150408/src/libopentld/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/github/OpenTLD_20150408 -BD:/github/OpenTLD_20150408 --check-stamp-file D:\github\OpenTLD_20150408\src\libopentld\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/github/OpenTLD_20150408/src/libopentld/CMakeLists.txt;D:\github\OpenTLD_20150408\src\libopentld\CMakeLists.txt;D:\github\OpenTLD_20150408\src\libopentld\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\github\OpenTLD_20150408\src\libopentld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/github/OpenTLD_20150408/src/libopentld/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/github/OpenTLD_20150408 -BD:/github/OpenTLD_20150408 --check-stamp-file D:\github\OpenTLD_20150408\src\libopentld\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/github/OpenTLD_20150408/src/libopentld/CMakeLists.txt;D:\github\OpenTLD_20150408\src\libopentld\CMakeLists.txt;D:\github\OpenTLD_20150408\src\libopentld\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\github\OpenTLD_20150408\src\libopentld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/github/OpenTLD_20150408/src/libopentld/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/github/OpenTLD_20150408 -BD:/github/OpenTLD_20150408 --check-stamp-file D:\github\OpenTLD_20150408\src\libopentld\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/github/OpenTLD_20150408/src/libopentld/CMakeLists.txt;D:\github\OpenTLD_20150408\src\libopentld\CMakeLists.txt;D:\github\OpenTLD_20150408\src\libopentld\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\github\OpenTLD_20150408\src\libopentld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/github/OpenTLD_20150408/src/libopentld/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/github/OpenTLD_20150408 -BD:/github/OpenTLD_20150408 --check-stamp-file D:\github\OpenTLD_20150408\src\libopentld\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/github/OpenTLD_20150408/src/libopentld/CMakeLists.txt;D:\github\OpenTLD_20150408\src\libopentld\CMakeLists.txt;D:\github\OpenTLD_20150408\src\libopentld\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\github\OpenTLD_20150408\src\libopentld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imacq\ImAcq.h" />
+    <ClInclude Include="mftracker\BB.h" />
+    <ClInclude Include="mftracker\BBPredict.h" />
+    <ClInclude Include="mftracker\FBTrack.h" />
+    <ClInclude Include="mftracker\Lk.h" />
+    <ClInclude Include="mftracker\Median.h" />
+    <ClInclude Include="tld\Clustering.h" />
+    <ClInclude Include="tld\DetectionResult.h" />
+    <ClInclude Include="tld\DetectorCascade.h" />
+    <ClInclude Include="tld\EnsembleClassifier.h" />
+    <ClInclude Include="tld\ForegroundDetector.h" />
+    <ClInclude Include="tld\IntegralImage.h" />
+    <ClInclude Include="tld\MedianFlowTracker.h" />
+    <ClInclude Include="tld\NNClassifier.h" />
+    <ClInclude Include="tld\NormalizedPatch.h" />
+    <ClInclude Include="tld\TLD.h" />
+    <ClInclude Include="tld\TLDUtil.h" />
+    <ClInclude Include="tld\VarianceFilter.h" />
+    <ClCompile Include="imacq\ImAcq.cpp"  />
+    <ClCompile Include="mftracker\BB.cpp"  />
+    <ClCompile Include="mftracker\BBPredict.cpp"  />
+    <ClCompile Include="mftracker\FBTrack.cpp"  />
+    <ClCompile Include="mftracker\Lk.cpp"  />
+    <ClCompile Include="mftracker\Median.cpp"  />
+    <ClCompile Include="tld\Clustering.cpp"  />
+    <ClCompile Include="tld\DetectionResult.cpp"  />
+    <ClCompile Include="tld\DetectorCascade.cpp"  />
+    <ClCompile Include="tld\EnsembleClassifier.cpp"  />
+    <ClCompile Include="tld\ForegroundDetector.cpp"  />
+    <ClCompile Include="tld\MedianFlowTracker.cpp"  />
+    <ClCompile Include="tld\NNClassifier.cpp"  />
+    <ClCompile Include="tld\TLD.cpp"  />
+    <ClCompile Include="tld\TLDUtil.cpp"  />
+    <ClCompile Include="tld\VarianceFilter.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/github/OpenTLD_20150408/ZERO_CHECK.vcxproj">
+      <Project>FFD6C6C9-A1E6-4B8E-B04A-2E09637E85F7</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
