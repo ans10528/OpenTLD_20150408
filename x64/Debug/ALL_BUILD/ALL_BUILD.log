@@ -1,11 +1,9 @@
-﻿已經開始建置於 2015/5/19 下午 06:10:11。
+﻿已經開始建置於 2015/5/20 上午 12:32:38。
      1>節點 2 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\ALL_BUILD.vcxproj"。
      1>CustomBuild:
-         Building Custom Rule D:/github/OpenTLD_20150408/CMakeLists.txt
-         CMake does not need to re-run because D:\github\OpenTLD_20150408\CMakeFiles\generate.stamp is up-to-date.
          Build all projects
      1>專案 "D:\github\OpenTLD_20150408\ALL_BUILD.vcxproj" (Build 目標) 建置完成。
 
 建置成功。
 
-經過時間 00:00:00.07
+經過時間 00:00:00.53
