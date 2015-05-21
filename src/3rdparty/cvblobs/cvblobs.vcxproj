@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{1C34B6DD-5B1F-4AF5-9A16-43E48CD2CD68}</ProjectGUID>
+    <ProjectGUID>{196561F3-042E-4874-8817-E64089128041}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>cvblobs</ProjectName>
@@ -264,7 +264,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:/github/OpenTLD_20150408/ZERO_CHECK.vcxproj">
-      <Project>FFD6C6C9-A1E6-4B8E-B04A-2E09637E85F7</Project>
+      <Project>2DFF6D9D-27CB-459C-BAB6-37629810E371</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

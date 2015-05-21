@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{9347D79F-07A0-4A1A-A814-83B16CDF6185}</ProjectGUID>
+    <ProjectGUID>{5453F8B1-486D-4B3A-AC60-D3F18AF83649}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>INSTALL</ProjectName>
@@ -208,7 +208,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:/github/OpenTLD_20150408/ALL_BUILD.vcxproj">
-      <Project>405D7537-D3F4-434E-BFD9-16C0A4ED7FD5</Project>
+      <Project>715A378A-9E92-4B40-92B2-A973D818C59D</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

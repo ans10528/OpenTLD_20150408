@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGUID>{A3C54004-736D-4056-8F92-1BD106BC96E5}</ProjectGUID>
+    <ProjectGUID>{F40ADA30-4C70-48BD-98DE-1F35B9FB39A1}</ProjectGUID>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>libopentld</ProjectName>
@@ -285,7 +285,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:/github/OpenTLD_20150408/ZERO_CHECK.vcxproj">
-      <Project>FFD6C6C9-A1E6-4B8E-B04A-2E09637E85F7</Project>
+      <Project>2DFF6D9D-27CB-459C-BAB6-37629810E371</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

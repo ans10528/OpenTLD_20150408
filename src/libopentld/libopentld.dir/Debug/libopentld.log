@@ -1,16 +1,7 @@
-﻿已經開始建置於 2015/5/19 下午 06:09:53。
+﻿已經開始建置於 2015/5/21 下午 05:11:41。
      1>節點 4 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\src\libopentld\libopentld.vcxproj"。
-     1>CustomBuild:
-         Building Custom Rule D:/github/OpenTLD_20150408/src/libopentld/CMakeLists.txt
-         CMake does not need to re-run because D:\github\OpenTLD_20150408\src\libopentld\CMakeFiles\generate.stamp is up-to-date.
-       ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /ID:\github\OpenTLD_20150408\src\libopentld\imacq /ID:\github\OpenTLD_20150408\src\libopentld\mftracker /ID:\github\OpenTLD_20150408\src\libopentld\tld /ID:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D LIBCONFIGXX_STATIC /D LIBCONFIG_STATIC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"libopentld.dir\Debug\\" /Fd"libopentld.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt imacq\ImAcq.cpp mftracker\BB.cpp mftracker\BBPredict.cpp mftracker\FBTrack.cpp mftracker\Lk.cpp mftracker\Median.cpp tld\Clustering.cpp tld\DetectionResult.cpp tld\DetectorCascade.cpp tld\EnsembleClassifier.cpp tld\ForegroundDetector.cpp tld\MedianFlowTracker.cpp tld\NNClassifier.cpp tld\TLD.cpp tld\TLDUtil.cpp tld\VarianceFilter.cpp
-         ImAcq.cpp
-     1>d:\opencv\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-     1>D:\opencv\build\include\opencv2/legacy/compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-     1>imacq\ImAcq.cpp(112): warning C4244: '=' : 將 'int64' 轉換為 'double'，由於類型不同，可能導致資料遺失
-     1>imacq\ImAcq.cpp(162): warning C4244: '正在初始化' : 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
-     1>imacq\ImAcq.cpp(165): warning C4244: '正在初始化' : 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /ID:\github\OpenTLD_20150408\src\libopentld\imacq /ID:\github\OpenTLD_20150408\src\libopentld\mftracker /ID:\github\OpenTLD_20150408\src\libopentld\tld /ID:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D LIBCONFIGXX_STATIC /D LIBCONFIG_STATIC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"libopentld.dir\Debug\\" /Fd"libopentld.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt mftracker\BB.cpp mftracker\BBPredict.cpp mftracker\FBTrack.cpp mftracker\Lk.cpp mftracker\Median.cpp tld\Clustering.cpp tld\DetectionResult.cpp tld\DetectorCascade.cpp tld\EnsembleClassifier.cpp tld\ForegroundDetector.cpp tld\MedianFlowTracker.cpp tld\NNClassifier.cpp tld\TLD.cpp tld\TLDUtil.cpp tld\VarianceFilter.cpp
          BB.cpp
      1>mftracker\BB.cpp(74): warning C4244: '=' : 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
      1>mftracker\BB.cpp(98): warning C4244: '=' : 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
@@ -137,4 +128,4 @@
 
 建置成功。
 
-經過時間 00:00:12.61
+經過時間 00:01:10.79

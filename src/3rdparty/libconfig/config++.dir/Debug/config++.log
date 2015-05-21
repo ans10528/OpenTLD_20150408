@@ -1,9 +1,6 @@
-﻿已經開始建置於 2015/5/19 下午 06:09:53。
+﻿已經開始建置於 2015/5/21 下午 05:11:40。
      1>節點 2 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\src\3rdparty\libconfig\config++.vcxproj"。
-     1>CustomBuild:
-         Building Custom Rule D:/github/OpenTLD_20150408/src/3rdparty/libconfig/CMakeLists.txt
-         CMake does not need to re-run because D:\github\OpenTLD_20150408\src\3rdparty\libconfig\CMakeFiles\generate.stamp is up-to-date.
-       ClCompile:
+     1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D LIBCONFIGXX_STATIC /D LIBCONFIG_STATIC /D YY_NO_UNISTD_H /D YY_USE_CONST /D _CRT_SECURE_NO_DEPRECATE /D _STDLIB_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"config++.dir\Debug\\" /Fd"config++.dir\Debug\vc120.pdb" /Gd /TC /errorReport:prompt grammar.c libconfig.c scanctx.c scanner.c strbuf.c
          grammar.c
          libconfig.c
@@ -108,4 +105,4 @@
 
 建置成功。
 
-經過時間 00:00:01.72
+經過時間 00:00:31.13
