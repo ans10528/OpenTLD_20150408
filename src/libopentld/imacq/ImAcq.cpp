@@ -61,7 +61,11 @@ void imAcqInit(ImAcq *imAcq)
             printf("Error: Unable to initialize camera\n");
             exit(0);
         }
-    }
+	}
+	else if (imAcq->method == IMACQ_CAM)
+	{
+		//TODO
+	}
     else if(imAcq->method == IMACQ_VID)
     {
         imAcq->capture = cvCaptureFromAVI(imAcq->imgPath);
@@ -106,7 +110,7 @@ void imAcqInit(ImAcq *imAcq)
             exit(0);
         }
 
-    }
+	}
     
     imAcq->startFrame = imAcq->currentFrame;
     imAcq->startTime = cvGetTickCount();
@@ -185,7 +189,12 @@ IplImage *imAcqGetImg(ImAcq *imAcq)
     if(imAcq->method == IMACQ_CAM || imAcq->method == IMACQ_VID)
     {
         img = imAcqGrab(imAcq->capture);
-    }
+	}
+
+	if (imAcq->method == IMACQ_SOCKET)
+	{
+		img = imAcqLoadCurrentFrameFromSocket(imAcq);
+	}
 
     if(imAcq->method == IMACQ_IMGS)
     {
@@ -195,11 +204,6 @@ IplImage *imAcqGetImg(ImAcq *imAcq)
 	if ((imAcq->method == IMACQ_LIVESIM) || (imAcq->method == IMACQ_STREAM))
 	{
 		img = imAcqGetImgByCurrentTime(imAcq);
-	}
-
-	if (imAcq->method == IMACQ_SOCKET)
-	{
-		img = imAcqLoadCurrentFrameFromSocket(imAcq);
 	}
 
     imAcqAdvance(imAcq);

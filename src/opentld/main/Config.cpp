@@ -111,7 +111,12 @@ int Config::init(int argc, char **argv)
             {
                 m_settings.m_method = IMACQ_CAM;
                 m_methodSet = true;
-            }
+			}
+			else if (!strcmp(optarg, "SOCKET"))
+			{
+				m_settings.m_method = IMACQ_SOCKET;
+				m_methodSet = true;
+			}
             else if(!strcmp(optarg, "VID"))
             {
                 m_settings.m_method = IMACQ_VID;
