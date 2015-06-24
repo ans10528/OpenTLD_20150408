@@ -62,9 +62,18 @@ void imAcqInit(ImAcq *imAcq)
             exit(0);
         }
 	}
-	else if (imAcq->method == IMACQ_CAM)
+	else if (imAcq->method == IMACQ_SOCKET)
 	{
-		//TODO
+		//TODO new thread for socket bind and get image
+		//imAcq->capture = cvCaptureFromCAM(imAcq->camNo);
+		//imAcq->NetThread;
+
+		if (imAcq->capture == NULL)
+		{
+			printf("Error: Unable to initialize Net Thread\n");
+			exit(0);
+		}
+
 	}
     else if(imAcq->method == IMACQ_VID)
     {

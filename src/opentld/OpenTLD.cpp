@@ -25,10 +25,13 @@
 #include "Config.h"
 #include "ImAcq.h"
 #include "Gui.h"
+#include <winsock2.h>
 
 using tld::Config;
 using tld::Gui;
 using tld::Settings;
+
+
 
 int main(int argc, char **argv)
 {

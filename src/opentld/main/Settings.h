@@ -75,7 +75,7 @@ public:
     float m_fps; //!< Frames per second
     float m_threshold; //!< threshold for determining positive results
     float m_proportionalShift; //!< proportional shift
-    std::string  m_imagePath; //!< path to the images or the video if m_method is IMACQ_VID or IMACQ_IMGS
+    std::string m_imagePath; //!< path to the images or the video if m_method is IMACQ_VID or IMACQ_IMGS
     std::string m_modelPath; //!< if modelPath is not set then either an initialBoundingBox must be specified or selectManually must be true.
     std::string m_modelExportFile; //!< Path where model is saved on export.
     std::string m_outputDir; //!< required if saveOutput = true, no default
