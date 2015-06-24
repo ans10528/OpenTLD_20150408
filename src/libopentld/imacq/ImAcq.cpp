@@ -64,7 +64,7 @@ void imAcqInit(ImAcq *imAcq)
 	}
 	else if (imAcq->method == IMACQ_CAM)
 	{
-		//TODO
+		//TODOsss
 	}
     else if(imAcq->method == IMACQ_VID)
     {
