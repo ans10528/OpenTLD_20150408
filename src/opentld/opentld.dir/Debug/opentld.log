@@ -1,10 +1,54 @@
-﻿已經開始建置於 2015/5/22 下午 01:43:45。
+﻿已經開始建置於 2015/7/24 上午 07:09:12。
      1>節點 2 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\src\opentld\opentld.vcxproj"。
-     1>Link:
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /ID:\github\OpenTLD_20150408\src\opentld\main /ID:\github\OpenTLD_20150408\src\opentld\..\libopentld\imacq /ID:\github\OpenTLD_20150408\src\opentld\..\libopentld\mftracker /ID:\github\OpenTLD_20150408\src\opentld\..\libopentld\tld /ID:\github\OpenTLD_20150408\src\opentld\..\3rdparty\cvblobs /ID:\github\OpenTLD_20150408\src\opentld\..\3rdparty\libconfig /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D LIBCONFIGXX_STATIC /D LIBCONFIG_STATIC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"opentld.dir\Debug\\" /Fd"opentld.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt OpenTLD.cpp
+         OpenTLD.cpp
+     1>d:\opencv\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>D:\opencv\build\include\opencv2/legacy/compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(201): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(216): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(217): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(218): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(219): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(220): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(221): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(222): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(223): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(224): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(225): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(226): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(228): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(231): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(232): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(233): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(234): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(235): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(236): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(237): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(238): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(241): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(244): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(248): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(298): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(301): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(305): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(308): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(312): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(314): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(326): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(327): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(382): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(385): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(386): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(389): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(390): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(393): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+     1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(396): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
+       Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\github\OpenTLD_20150408\bin\Debug\opentld.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:/opencv/build/x64/vc12/lib /LIBPATH:D:/opencv/build/x64/vc12/lib/Debug kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\..\lib\Debug\main.lib ..\..\lib\Debug\opentld.lib ..\..\lib\Debug\cvblobs.lib ..\..\lib\Debug\config++.lib D:\opencv\build\x64\vc12\lib\opencv_videostab2410d.lib D:\opencv\build\x64\vc12\lib\opencv_video2410d.lib D:\opencv\build\x64\vc12\lib\opencv_ts2410d.lib D:\opencv\build\x64\vc12\lib\opencv_superres2410d.lib D:\opencv\build\x64\vc12\lib\opencv_stitching2410d.lib D:\opencv\build\x64\vc12\lib\opencv_photo2410d.lib D:\opencv\build\x64\vc12\lib\opencv_ocl2410d.lib D:\opencv\build\x64\vc12\lib\opencv_objdetect2410d.lib D:\opencv\build\x64\vc12\lib\opencv_nonfree2410d.lib D:\opencv\build\x64\vc12\lib\opencv_ml2410d.lib D:\opencv\build\x64\vc12\lib\opencv_legacy2410d.lib D:\opencv\build\x64\vc12\lib\opencv_imgproc2410d.lib D:\opencv\build\x64\vc12\lib\opencv_highgui2410d.lib D:\opencv\build\x64\vc12\lib\opencv_gpu2410d.lib D:\opencv\build\x64\vc12\lib\opencv_flann2410d.lib D:\opencv\build\x64\vc12\lib\opencv_features2d2410d.lib D:\opencv\build\x64\vc12\lib\opencv_core2410d.lib D:\opencv\build\x64\vc12\lib\opencv_contrib2410d.lib D:\opencv\build\x64\vc12\lib\opencv_calib3d2410d.lib D:\opencv\build\x64\vc12\lib\opencv_nonfree2410d.lib D:\opencv\build\x64\vc12\lib\opencv_ocl2410d.lib D:\opencv\build\x64\vc12\lib\opencv_gpu2410d.lib D:\opencv\build\x64\vc12\lib\opencv_photo2410d.lib D:\opencv\build\x64\vc12\lib\opencv_objdetect2410d.lib D:\opencv\build\x64\vc12\lib\opencv_legacy2410d.lib D:\opencv\build\x64\vc12\lib\opencv_video2410d.lib D:\opencv\build\x64\vc12\lib\opencv_ml2410d.lib D:\opencv\build\x64\vc12\lib\opencv_calib3d2410d.lib D:\opencv\build\x64\vc12\lib\opencv_features2d2410d.lib D:\opencv\build\x64\vc12\lib\opencv_highgui2410d.lib D:\opencv\build\x64\vc12\lib\opencv_imgproc2410d.lib D:\opencv\build\x64\vc12\lib\opencv_flann2410d.lib D:\opencv\build\x64\vc12\lib\opencv_core2410d.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/github/OpenTLD_20150408/bin/Debug/opentld.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/github/OpenTLD_20150408/bin/Debug/opentld.lib" /MACHINE:X64  /machine:x64 /debug opentld.dir\Debug\OpenTLD.obj
          opentld.vcxproj -> D:\github\OpenTLD_20150408\bin\Debug\opentld.exe
      1>專案 "D:\github\OpenTLD_20150408\src\opentld\opentld.vcxproj" (Build 目標) 建置完成。
 
 建置成功。
 
-經過時間 00:00:09.80
+經過時間 00:00:01.55
