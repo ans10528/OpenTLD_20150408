@@ -52,6 +52,11 @@ ImAcq *imAcqAlloc()
 
 void imAcqInit(ImAcq *imAcq)
 {
+	//Socket
+	imAcq->SocketImageReadAllow = 0;
+	imAcq->UseingSocketImage = 0;
+	imAcq->SocketImage = cvCreateImage(cvSize(320, 240), 8, 3);
+
     if(imAcq->method == IMACQ_CAM)
     {
         imAcq->capture = cvCaptureFromCAM(imAcq->camNo);
@@ -64,15 +69,7 @@ void imAcqInit(ImAcq *imAcq)
 	}
 	else if (imAcq->method == IMACQ_SOCKET)
 	{
-		//TODO new thread for socket bind and get image
-		//imAcq->capture = cvCaptureFromCAM(imAcq->camNo);
-		//imAcq->NetThread;
 
-		if (imAcq->capture == NULL)
-		{
-			printf("Error: Unable to initialize Net Thread\n");
-			exit(0);
-		}
 
 	}
     else if(imAcq->method == IMACQ_VID)
@@ -187,7 +184,19 @@ IplImage *imAcqGetImgByCurrentTime(ImAcq *imAcq)
 // phisten #150515-1 test
 IplImage *imAcqLoadCurrentFrameFromSocket(ImAcq *imAcq)
 {
-	return imAcqLoadFrame(imAcq, imAcq->currentFrame);
+	imAcq->UseingSocketImage = 1;
+	IplImage *tmpIplImage = cvCreateImage(cvSize(320, 240), 8, 3);
+	int cloneOK = 0;
+	while (cloneOK == 0)
+	{
+		if (imAcq->SocketImageReadAllow == 1)
+		{
+			tmpIplImage = cvCloneImage(imAcq->SocketImage);
+			cloneOK = 1;
+		}
+	}
+	imAcq->UseingSocketImage = 0;
+	return tmpIplImage;
 }
 
 IplImage *imAcqGetImg(ImAcq *imAcq)

@@ -25,17 +25,18 @@
 #include "Config.h"
 #include "ImAcq.h"
 #include "Gui.h"
-#include <winsock2.h>
+
+#include <thread>
+#include "SocketImageStream.h"
+
 
 using tld::Config;
 using tld::Gui;
 using tld::Settings;
 
 
-
 int main(int argc, char **argv)
 {
-
     Main *main = new Main();
     Config config;
     ImAcq *imAcq = imAcqAlloc();
@@ -60,8 +61,17 @@ int main(int argc, char **argv)
         gui->init();
     }
 
+	//socket Thread
+	SocketImageStream *socketImageStream = new SocketImageStream();
+
+	std::thread mThread(&SocketImageStream::newSocketImageStream, socketImageStream, main->imAcq);
+
     main->doWork();
 
+	mThread.join();
+
+	delete socketImageStream;
+	socketImageStream = NULL;
     delete main;
     main = NULL;
     delete gui;

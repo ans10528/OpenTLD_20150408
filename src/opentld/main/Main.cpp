@@ -269,6 +269,16 @@ void Main::doWork()
 
                     tld->selectObject(grey, &r);
                 }
+
+				//20150813 socket Stream
+				if (key == 's')
+				{
+					imAcq->method = IMACQ_SOCKET;
+				}
+				if (key == 'w')
+				{
+					imAcq->method = IMACQ_CAM;
+				}
             }
 
             if(saveDir != NULL)

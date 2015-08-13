@@ -1,22 +1,6 @@
-﻿已經開始建置於 2015/5/21 下午 05:11:40。
+﻿已經開始建置於 2015/8/13 上午 10:25:58。
      1>節點 2 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\src\3rdparty\libconfig\config++.vcxproj"。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D LIBCONFIGXX_STATIC /D LIBCONFIG_STATIC /D YY_NO_UNISTD_H /D YY_USE_CONST /D _CRT_SECURE_NO_DEPRECATE /D _STDLIB_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"config++.dir\Debug\\" /Fd"config++.dir\Debug\vc120.pdb" /Gd /TC /errorReport:prompt grammar.c libconfig.c scanctx.c scanner.c strbuf.c
-         grammar.c
-         libconfig.c
-         scanctx.c
-         scanner.c
-     1>scanner.c(941): warning C4267: '=' : 將 'size_t' 轉換為 'int'，資料可能遺失
-     1>scanner.l(181): warning C4267: '=' : 將 'size_t' 轉換為 'int'，資料可能遺失
-     1>scanner.c(1412): warning C4267: '正在初始化' : 將 'size_t' 轉換為 'int'，資料可能遺失
-     1>scanner.c(1425): warning C4267: '正在初始化' : 將 'size_t' 轉換為 'int'，資料可能遺失
-     1>scanner.c(1447): warning C4267: '=' : 將 'size_t' 轉換為 'int'，資料可能遺失
-     1>scanner.c(1456): warning C4267: '=' : 將 'size_t' 轉換為 'int'，資料可能遺失
-     1>scanner.c(1902): warning C4267: '=' : 將 'size_t' 轉換為 'int'，資料可能遺失
-     1>scanner.c(1940): warning C4267: '=' : 將 'size_t' 轉換為 'int'，資料可能遺失
-     1>scanner.c(1962): warning C4267: '函式' : 將 'size_t' 轉換為 'int'，資料可能遺失
-         strbuf.c
-         正在產生程式碼...
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D LIBCONFIGXX_STATIC /D LIBCONFIG_STATIC /D YY_NO_UNISTD_H /D YY_USE_CONST /D _CRT_SECURE_NO_DEPRECATE /D _STDLIB_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"config++.dir\Debug\\" /Fd"config++.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt libconfigcpp.cc
          libconfigcpp.cc
      1>d:\github\opentld_20150408\src\3rdparty\libconfig\libconfig.h++(201): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
@@ -105,4 +89,4 @@
 
 建置成功。
 
-經過時間 00:00:31.13
+經過時間 00:00:01.69

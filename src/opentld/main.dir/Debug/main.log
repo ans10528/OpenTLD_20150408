@@ -1,7 +1,14 @@
-﻿已經開始建置於 2015/7/24 上午 07:09:10。
+﻿已經開始建置於 2015/8/13 下午 12:43:52。
      1>節點 2 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\src\opentld\main.vcxproj"。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /ID:\github\OpenTLD_20150408\src\opentld\main /ID:\github\OpenTLD_20150408\src\opentld\..\libopentld\imacq /ID:\github\OpenTLD_20150408\src\opentld\..\libopentld\mftracker /ID:\github\OpenTLD_20150408\src\opentld\..\libopentld\tld /ID:\github\OpenTLD_20150408\src\opentld\..\3rdparty\cvblobs /ID:\github\OpenTLD_20150408\src\opentld\..\3rdparty\libconfig /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D LIBCONFIGXX_STATIC /D LIBCONFIG_STATIC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"main.dir\Debug\\" /Fd"main.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt main\Config.cpp main\Main.cpp main\Settings.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /ID:\github\OpenTLD_20150408\src\opentld\main /ID:\github\OpenTLD_20150408\src\opentld\..\libopentld\imacq /ID:\github\OpenTLD_20150408\src\opentld\..\libopentld\mftracker /ID:\github\OpenTLD_20150408\src\opentld\..\libopentld\tld /ID:\github\OpenTLD_20150408\src\opentld\..\3rdparty\cvblobs /ID:\github\OpenTLD_20150408\src\opentld\..\3rdparty\libconfig /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D LIBCONFIGXX_STATIC /D LIBCONFIG_STATIC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"main.dir\Debug\\" /Fd"main.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt SocketImageStream.cpp main\Config.cpp main\Gui.cpp main\Main.cpp main\Settings.cpp
+         SocketImageStream.cpp
+     1>d:\opencv\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 請參閱 'fopen' 的宣告
+     1>D:\opencv\build\include\opencv2/legacy/compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>SocketImageStream.cpp(51): warning C4101: 'recvbuf' : 未參考的區域變數
+     1>SocketImageStream.cpp(184): warning C4101: 'curBufLen' : 未參考的區域變數
          Config.cpp
      1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(201): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
      1>D:\github\OpenTLD_20150408\src\3rdparty\libconfig\libconfig.h++(216): warning C4290: 略過 C++ 例外狀況規格，除非將函式標示為非 __declspec(nothrow)
@@ -58,6 +65,11 @@
      1>main\Config.cpp(259): warning C4101: 'nfex' : 未參考的區域變數
      1>main\Config.cpp(279): warning C4101: 'nfex' : 未參考的區域變數
      1>main\Config.cpp(424): warning C4101: 'nfex' : 未參考的區域變數
+         Gui.cpp
+     1>d:\opencv\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 請參閱 'fopen' 的宣告
+     1>D:\opencv\build\include\opencv2/legacy/compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
          Main.cpp
      1>d:\opencv\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
      1>D:\opencv\build\include\opencv2/legacy/compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
@@ -107,7 +119,8 @@
      1>main\Settings.cpp(67): warning C4305: '正在初始化' : 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
          正在產生程式碼...
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\github\OpenTLD_20150408\lib\Debug\main.lib" /NOLOGO /MACHINE:X64 main.dir\Debug\Config.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\github\OpenTLD_20150408\lib\Debug\main.lib" /NOLOGO /MACHINE:X64 main.dir\Debug\SocketImageStream.obj
+         main.dir\Debug\Config.obj
          main.dir\Debug\Gui.obj
          main.dir\Debug\Main.obj
          main.dir\Debug\Settings.obj
@@ -117,4 +130,4 @@
 
 建置成功。
 
-經過時間 00:00:02.47
+經過時間 00:00:04.39

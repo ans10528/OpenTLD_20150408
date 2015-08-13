@@ -55,6 +55,10 @@ typedef struct
     int camNo;
     double startTime;
     float fps;
+
+	IplImage *SocketImage;
+	int UseingSocketImage;
+	int SocketImageReadAllow;
 } ImAcq ;
 
 ImAcq *imAcqAlloc();
