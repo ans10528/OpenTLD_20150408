@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿已經開始建置於 2015/8/21 上午 06:49:15。
      1>節點 2 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\src\opentld\main.vcxproj"。
      1>ClCompile:
@@ -10,6 +11,11 @@
      1>SocketImageStream.cpp(41): warning C4101: 'recvbuf' : 未參考的區域變數
      1>SocketImageStream.cpp(110): warning C4101: 'curBufLen' : 未參考的區域變數
        Lib:
+=======
+﻿已經開始建置於 2015/8/13 下午 01:47:55。
+     1>節點 3 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\src\opentld\main.vcxproj"。
+     1>Lib:
+>>>>>>> origin/master
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\github\OpenTLD_20150408\lib\Debug\main.lib" /NOLOGO /MACHINE:X64 main.dir\Debug\SocketImageStream.obj
          main.dir\Debug\Config.obj
          main.dir\Debug\Gui.obj
@@ -21,4 +27,8 @@
 
 建置成功。
 
+<<<<<<< HEAD
 經過時間 00:00:01.36
+=======
+經過時間 00:00:01.05
+>>>>>>> origin/master

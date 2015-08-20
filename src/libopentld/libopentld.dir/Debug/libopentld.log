@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿已經開始建置於 2015/8/21 上午 06:49:14。
      1>節點 2 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\src\libopentld\libopentld.vcxproj"。
      1>ClCompile:
@@ -9,6 +10,11 @@
      1>imacq\ImAcq.cpp(172): warning C4244: '正在初始化' : 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
      1>imacq\ImAcq.cpp(175): warning C4244: '正在初始化' : 將 'float' 轉換為 'int'，由於類型不同，可能導致資料遺失
        Lib:
+=======
+﻿已經開始建置於 2015/8/13 下午 01:47:44。
+     1>節點 4 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\src\libopentld\libopentld.vcxproj"。
+     1>Lib:
+>>>>>>> origin/master
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\github\OpenTLD_20150408\lib\Debug\opentld.lib" /NOLOGO /MACHINE:X64 libopentld.dir\Debug\ImAcq.obj
          libopentld.dir\Debug\BB.obj
          libopentld.dir\Debug\BBPredict.obj
@@ -30,4 +36,8 @@
 
 建置成功。
 
+<<<<<<< HEAD
 經過時間 00:00:01.35
+=======
+經過時間 00:00:10.85
+>>>>>>> origin/master
