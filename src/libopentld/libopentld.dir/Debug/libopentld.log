@@ -1,4 +1,4 @@
-﻿已經開始建置於 2015/8/13 下午 12:58:13。
+﻿已經開始建置於 2015/8/21 上午 06:49:14。
      1>節點 2 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\src\libopentld\libopentld.vcxproj"。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /ID:\github\OpenTLD_20150408\src\libopentld\imacq /ID:\github\OpenTLD_20150408\src\libopentld\mftracker /ID:\github\OpenTLD_20150408\src\libopentld\tld /ID:\github\OpenTLD_20150408\src\libopentld\..\3rdparty\cvblobs /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D LIBCONFIGXX_STATIC /D LIBCONFIG_STATIC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"libopentld.dir\Debug\\" /Fd"libopentld.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt imacq\ImAcq.cpp
@@ -30,4 +30,4 @@
 
 建置成功。
 
-經過時間 00:00:01.41
+經過時間 00:00:01.35

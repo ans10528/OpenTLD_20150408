@@ -209,6 +209,11 @@ void Main::doWork()
             if(showOutput)
             {
                 gui->showImage(img);
+				if (imAcq->method == IMACQ_SOCKET)
+				{
+					cvWaitKey(33);//#20150821 提供GUI更新時間
+				}
+
                 char key = gui->getKey();
 
                 if(key == 'q') break;

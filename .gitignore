@@ -10,3 +10,10 @@ cmake_install.cmake
 *.a
 build/
 
+
+*.exe
+*.lib
+*.ilk
+*.suo
+*.log
+*.sdf

@@ -42,7 +42,7 @@ static void msleep(int milliseconds)
 ImAcq *imAcqAlloc()
 {
     ImAcq *imAcq = (ImAcq *)malloc(sizeof(ImAcq));
-    imAcq->method = IMACQ_CAM;
+	imAcq->method = IMACQ_CAM; //#20150821 default IMACQ_CAM
     imAcq->currentFrame = 1;
     imAcq->lastFrame = 0;
     imAcq->camNo = 0;
@@ -55,7 +55,7 @@ void imAcqInit(ImAcq *imAcq)
 	//Socket
 	imAcq->SocketImageReadAllow = 0;
 	imAcq->UseingSocketImage = 0;
-	imAcq->SocketImage = cvCreateImage(cvSize(320, 240), 8, 3);
+	imAcq->SocketImage = cvCreateImage(cvSize(640, 480), 8, 3);
 
     if(imAcq->method == IMACQ_CAM)
     {

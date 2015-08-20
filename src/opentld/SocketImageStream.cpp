@@ -36,100 +36,26 @@ SocketImageStream::~SocketImageStream()
 //IplImage SocketImage;
 //int SocketImageLock = 1;
 
-int SocketImageStream::newSocketImageStream(ImAcq *imAcq)
+int ImageSocketClient(ImAcq *imAcq, SOCKET ClientSocket)
 {
-	WSADATA wsaData;
-	int iResult;
-
-	SOCKET ListenSocket = INVALID_SOCKET;
-	SOCKET ClientSocket = INVALID_SOCKET;
-
-	struct addrinfo *result = NULL;
-	struct addrinfo hints;
-
-	int iSendResult;
 	char recvbuf[DEFAULT_BUFLEN];
 	int recvbuflen = DEFAULT_BUFLEN;
+	int iSendResult;
+	int iResult;
 
 
-	const char *pstrWindowsTitle = "View 320x240 Color";
-
+	const char *pstrWindowsTitle = "View - Socket Image Stream";
 	IplImage *pImage1;
 	pImage1 = cvCreateImage(cvSize(320, 240), 8, 3);
-
 	cvShowImage(pstrWindowsTitle, pImage1);
-
-
-
-	std::cout << "Winsock" << std::endl;
-
-	// Initialize Winsock
-	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
-	if (iResult != 0) {
-		printf("WSAStartup failed with error: %d\n", iResult);
-		return 1;
-	}
-
-	ZeroMemory(&hints, sizeof(hints));
-	hints.ai_family = AF_INET;
-	hints.ai_socktype = SOCK_STREAM;
-	hints.ai_protocol = IPPROTO_TCP;
-	hints.ai_flags = AI_PASSIVE;
-
-	// Resolve the server address and port
-	iResult = getaddrinfo(NULL, DEFAULT_PORT, &hints, &result);
-	if (iResult != 0) {
-		printf("getaddrinfo failed with error: %d\n", iResult);
-		WSACleanup();
-		return 1;
-	}
-
-	// Create a SOCKET for connecting to server
-	ListenSocket = socket(result->ai_family, result->ai_socktype, result->ai_protocol);
-	if (ListenSocket == INVALID_SOCKET) {
-		printf("socket failed with error: %ld\n", WSAGetLastError());
-		freeaddrinfo(result);
-		WSACleanup();
-		return 1;
-	}
-
-	// Setup the TCP listening socket
-	iResult = bind(ListenSocket, result->ai_addr, (int) result->ai_addrlen);
-	if (iResult == SOCKET_ERROR) {
-		printf("bind failed with error: %d\n", WSAGetLastError());
-		freeaddrinfo(result);
-		closesocket(ListenSocket);
-		WSACleanup();
-		return 1;
-	}
-
-	freeaddrinfo(result);
-
-	iResult = listen(ListenSocket, SOMAXCONN);
-	if (iResult == SOCKET_ERROR) {
-		printf("listen failed with error: %d\n", WSAGetLastError());
-		closesocket(ListenSocket);
-		WSACleanup();
-		return 1;
-	}
-
-	// Accept a client socket
-	ClientSocket = accept(ListenSocket, NULL, NULL); //同步
-	if (ClientSocket == INVALID_SOCKET) {
-		printf("accept failed with error: %d\n", WSAGetLastError());
-		closesocket(ListenSocket);
-		WSACleanup();
-		return 1;
-	}
-
-	// No longer need server socket
-	closesocket(ListenSocket);
 
 
 	char *data_Len_Buf = new char[4];
 	char *data_SendTime_Buf = new char[4];
 	int dataLen = 0;
 	char *data;
+
+
 
 	// 對照c#端 - 系統時間
 	//time_t t = time(0);
@@ -208,6 +134,12 @@ int SocketImageStream::newSocketImageStream(ImAcq *imAcq)
 				delete []tmpAcceptData;
 			}
 		}
+		if (iResult == SOCKET_ERROR || iResult == 0) {
+			printf("ClientSocketDisconnection %d\n", WSAGetLastError());
+			shutdown(ClientSocket, 2);
+			closesocket(ClientSocket);
+			return 1;
+		}
 		//測試影像接收是否正常
 		//Mat cppImg;
 		CvMat tmpMat = cvMat(320, 240, CV_8UC1, data);
@@ -219,12 +151,14 @@ int SocketImageStream::newSocketImageStream(ImAcq *imAcq)
 
 		if (imAcq->UseingSocketImage == 0)
 		{
-			imAcq->SocketImage = cvCloneImage(pImage1);
+			cvResize(pImage1, imAcq->SocketImage);
+			//imAcq->SocketImage = cvCloneImage(pImage1);
 		}
+		cvShowImage(pstrWindowsTitle, pImage1);
+
 		//解鎖影像使用權
 		imAcq->SocketImageReadAllow = 1;
 
-		cvShowImage(pstrWindowsTitle, pImage1);
 		cvWaitKey(33);
 
 		//回傳接收成功 要求下一張影像
@@ -239,16 +173,107 @@ int SocketImageStream::newSocketImageStream(ImAcq *imAcq)
 		printf("shutdown failed with error: %d\n", WSAGetLastError());
 		shutdown(ClientSocket, 2);
 		closesocket(ClientSocket);
-		WSACleanup();
+		//WSACleanup();
 		return 1;
 	}
 
 	// cleanup
 	shutdown(ClientSocket, 2);
 	closesocket(ClientSocket);
-	WSACleanup();
+	return 0;
+}
 
+int SocketImageStream::newSocketImageStream(ImAcq *imAcq)
+{
+
+	WSADATA wsaData;
+	int iResult;
+
+	SOCKET ListenSocket = INVALID_SOCKET;
+	SOCKET ClientSocket = INVALID_SOCKET;
+
+	struct addrinfo *result = NULL;
+	struct addrinfo hints;
+
+
+
+	std::cout << "Winsock" << std::endl;
+
+	// Initialize Winsock
+	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
+	if (iResult != 0) {
+		printf("WSAStartup failed with error: %d\n", iResult);
+		return 1;
+	}
+
+	ZeroMemory(&hints, sizeof(hints));
+	hints.ai_family = AF_INET;
+	hints.ai_socktype = SOCK_STREAM;
+	hints.ai_protocol = IPPROTO_TCP;
+	hints.ai_flags = AI_PASSIVE;
+
+	// Resolve the server address and port
+	iResult = getaddrinfo(NULL, DEFAULT_PORT, &hints, &result);
+	if (iResult != 0) {
+		printf("getaddrinfo failed with error: %d\n", iResult);
+		WSACleanup();
+		return 1;
+	}
+
+	// Create a SOCKET for connecting to server
+	ListenSocket = socket(result->ai_family, result->ai_socktype, result->ai_protocol);
+	if (ListenSocket == INVALID_SOCKET) {
+		printf("socket failed with error: %ld\n", WSAGetLastError());
+		freeaddrinfo(result);
+		WSACleanup();
+		return 1;
+	}
+
+	// Setup the TCP listening socket
+	iResult = bind(ListenSocket, result->ai_addr, (int) result->ai_addrlen);
+	if (iResult == SOCKET_ERROR) {
+		printf("bind failed with error: %d\n", WSAGetLastError());
+		freeaddrinfo(result);
+		closesocket(ListenSocket);
+		WSACleanup();
+		return 1;
+	}
+
+	freeaddrinfo(result);
+
+	iResult = listen(ListenSocket, SOMAXCONN);
+	if (iResult == SOCKET_ERROR) {
+		printf("listen failed with error: %d\n", WSAGetLastError());
+		closesocket(ListenSocket);
+		WSACleanup();
+		return 1;
+	}
+
+	int clientResult = 0;
+	do
+	{
+		// Accept a client socket
+		ClientSocket = accept(ListenSocket, NULL, NULL); //同步
+		if (ClientSocket == INVALID_SOCKET) {
+			printf("accept failed with error: %d\n", WSAGetLastError());
+			closesocket(ListenSocket);
+			WSACleanup();
+			return 1;
+		}
+
+		std::cout << "ClientConnect" << std::endl;
+		clientResult = ImageSocketClient(imAcq, ClientSocket);
+		std::cout << "ClientClose" << std::endl;
+
+	} while (clientResult != 0);
+
+	std::cout << "ListenSocketClose" << std::endl;
+
+	// No longer need server socket
+	closesocket(ListenSocket);
+	WSACleanup();
 
 	//system("PAUSE");
 	return 1;
 }
+
