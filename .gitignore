@@ -10,3 +10,9 @@ cmake_install.cmake
 *.a
 build/
 
+*.log
+bin/Debug/opentld.exe
+*.pdb
+*.lib
+OpenTLD.v12.suo
+*.sdf
