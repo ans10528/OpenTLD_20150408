@@ -11,6 +11,8 @@ cmake_install.cmake
 build/
 
 *.suo
+*.log
+*.sdf
 
 # Compiled Object files
 *.slo
