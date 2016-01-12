@@ -1,6 +1,65 @@
-﻿已經開始建置於 2015/8/13 下午 01:47:44。
+﻿已經開始建置於 2016/1/12 上午 07:55:46。
      1>節點 3 (Build 目標) 上的專案 "D:\github\OpenTLD_20150408\src\3rdparty\cvblobs\cvblobs.vcxproj"。
-     1>Lib:
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D LIBCONFIGXX_STATIC /D LIBCONFIG_STATIC /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cvblobs.dir\Debug\\" /Fd"cvblobs.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt BlobContour.cpp BlobOperators.cpp BlobProperties.cpp BlobResult.cpp ComponentLabeling.cpp blob.cpp
+         BlobContour.cpp
+     1>BlobContour.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 請參閱 'fopen' 的宣告
+     1>D:\opencv\build\include\opencv2/legacy/compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+         BlobOperators.cpp
+     1>BlobOperators.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\BlobOperators.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\blob.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\BlobLibraryConfiguration.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 請參閱 'fopen' 的宣告
+     1>D:\opencv\build\include\opencv2/legacy/compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+         BlobProperties.cpp
+     1>BlobProperties.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\BlobLibraryConfiguration.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>D:\opencv\build\include\opencv2/legacy/compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+         BlobResult.cpp
+     1>BlobResult.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\BlobResult.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\BlobLibraryConfiguration.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\blob.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 請參閱 'fopen' 的宣告
+     1>D:\opencv\build\include\opencv2/legacy/compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\BlobOperators.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\ComponentLabeling.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\BlobResult.h(149): warning C4267: 'return' : 將 'size_t' 轉換為 'int'，資料可能遺失
+     1>BlobResult.cpp(934): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 請參閱 'fopen' 的宣告
+         ComponentLabeling.cpp
+     1>ComponentLabeling.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\ComponentLabeling.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 請參閱 'fopen' 的宣告
+     1>D:\opencv\build\include\opencv2/legacy/compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\blob.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\BlobLibraryConfiguration.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>ComponentLabeling.cpp(318): warning C4244: '引數' : 將 'short' 轉換為 't_chainCode'，由於類型不同，可能導致資料遺失
+     1>ComponentLabeling.cpp(346): warning C4244: '引數' : 將 'short' 轉換為 't_chainCode'，由於類型不同，可能導致資料遺失
+         blob.cpp
+     1>blob.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\blob.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\github\opentld_20150408\src\3rdparty\cvblobs\BlobLibraryConfiguration.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>d:\opencv\build\include\opencv2\flann\dist.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>D:\opencv\build\include\opencv2/legacy/compat.hpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+     1>blob.cpp(586): warning C4244: '=' : 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+     1>blob.cpp(587): warning C4244: '=' : 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+     1>blob.cpp(592): warning C4244: '=' : 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+     1>blob.cpp(603): warning C4244: '=' : 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+     1>blob.cpp(624): warning C4244: '=' : 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+         正在產生程式碼...
+       Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\github\OpenTLD_20150408\lib\Debug\cvblobs.lib" /NOLOGO /MACHINE:X64 cvblobs.dir\Debug\blob.obj
          cvblobs.dir\Debug\BlobContour.obj
          cvblobs.dir\Debug\BlobOperators.obj
@@ -12,4 +71,4 @@
 
 建置成功。
 
-經過時間 00:00:09.70
+經過時間 00:00:06.61

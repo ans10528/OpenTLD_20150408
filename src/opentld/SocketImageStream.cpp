@@ -147,10 +147,15 @@ int ImageSocketClient(ImAcq *imAcq, SOCKET ClientSocket)
 		//鎖定影像使用權
 		imAcq->SocketImageReadAllow = 0;
 
+		cvReleaseImage(&pImage1);
 		pImage1 = cvDecodeImage(&tmpMat, 1); //解壓縮影像
 
 		if (imAcq->UseingSocketImage == 0)
 		{
+			//if (imAcq->SocketImage != NULL)
+			//{
+			//	delete imAcq->SocketImage;
+			//}
 			cvResize(pImage1, imAcq->SocketImage);
 			//imAcq->SocketImage = cvCloneImage(pImage1);
 		}
@@ -159,12 +164,13 @@ int ImageSocketClient(ImAcq *imAcq, SOCKET ClientSocket)
 		//解鎖影像使用權
 		imAcq->SocketImageReadAllow = 1;
 
-		cvWaitKey(33);
+		cvWaitKey(41); // 33=30fps  41=24fps
 
 		//回傳接收成功 要求下一張影像
 		send(ClientSocket, new char[]{3}, 1, 0);
 
 		delete []data;
+		//delete pImage1;
 	} while (iResult > 0);
 
 	// shutdown the connection since we're done

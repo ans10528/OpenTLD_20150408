@@ -185,7 +185,7 @@ IplImage *imAcqGetImgByCurrentTime(ImAcq *imAcq)
 IplImage *imAcqLoadCurrentFrameFromSocket(ImAcq *imAcq)
 {
 	imAcq->UseingSocketImage = 1;
-	IplImage *tmpIplImage = cvCreateImage(cvSize(640, 480), 8, 3);
+	IplImage *tmpIplImage;// = cvCreateImage(cvSize(640, 480), 8, 3);
 	int cloneOK = 0;
 	while (cloneOK == 0)
 	{
