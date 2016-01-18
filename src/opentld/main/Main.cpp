@@ -177,6 +177,8 @@ void Main::doWork()
 					cvLine(img, cvPoint(center.x-2, center.y-2), cvPoint(center.x+2, center.y+2), rectangleColor, 2);
 					cvLine(img, cvPoint(center.x-2, center.y+2), cvPoint(center.x+2, center.y-2), rectangleColor, 2);
 					trajectory.addPoint(center, rectangleColor);
+
+
 				}
             }
 			else if(showTrajectory)
@@ -205,6 +207,15 @@ void Main::doWork()
 
             }
 
+			//draw and send center bottom   #20160118 phisten
+			if (tld->currBB != NULL)
+			{
+				CvPoint bc = cvPoint(tld->currBB->x + tld->currBB->width / 2, tld->currBB->y + tld->currBB->height);
+				cvLine(img, cvPoint(bc.x - 2, bc.y + 2), cvPoint(bc.x + 2, bc.y - 2), black, 2);
+				BoundingBoxCenterBottom.x = bc.x;
+				BoundingBoxCenterBottom.y = bc.y;
+				BoundingBoxCenterBottom_Updated = 1;
+			}
 
             if(showOutput)
             {

@@ -60,6 +60,9 @@ public:
     const char *modelExportFile;
     int seed;
 
+	CvPoint BoundingBoxCenterBottom;
+	int BoundingBoxCenterBottom_Updated;
+
     Main()
     {
         tld = new tld::TLD();
@@ -88,6 +91,9 @@ public:
         gui = NULL;
         modelPath = NULL;
         imAcq = NULL;
+
+		BoundingBoxCenterBottom_Updated = 0; //追蹤物座標更新完畢  可傳送
+		BoundingBoxCenterBottom = cvPoint(0, 0); //追蹤目標物
     }
 
     ~Main()

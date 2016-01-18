@@ -252,6 +252,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SocketImageStream.cpp" />
+    <ClCompile Include="TargetPosSocket.cpp" />
     <ClInclude Include="SocketImageStream.h" />
     <ClInclude Include="main\Config.h" />
     <ClInclude Include="main\Gui.h" />
@@ -263,6 +264,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="main\Main.cpp" />
     <ClCompile Include="main\Settings.cpp" />
     <ClCompile Include="main\Trajectory.cpp" />
+    <ClInclude Include="TargetPosSocket.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="D:/github/OpenTLD_20150408/ZERO_CHECK.vcxproj">

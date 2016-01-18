@@ -28,6 +28,7 @@
 
 #include <thread>
 #include "SocketImageStream.h"
+#include "TargetPosSocket.h"
 
 
 using tld::Config;
@@ -63,12 +64,15 @@ int main(int argc, char **argv)
 
 	//socket Thread
 	SocketImageStream *socketImageStream = new SocketImageStream();
+	TargetPosSocket *targetPosSocket = new TargetPosSocket();
 
-	std::thread mThread(&SocketImageStream::newSocketImageStream, socketImageStream, main->imAcq);
+	std::thread mThread_ImageStream(&SocketImageStream::newSocketImageStream, socketImageStream, main->imAcq);
+	std::thread mThread_TargetPos(&TargetPosSocket::newTargetPosSocket, targetPosSocket, &(main->BoundingBoxCenterBottom), &(main->BoundingBoxCenterBottom_Updated));
 
     main->doWork();
 
-	mThread.join();
+	mThread_ImageStream.join();
+	mThread_TargetPos.join();
 
 	delete socketImageStream;
 	socketImageStream = NULL;
